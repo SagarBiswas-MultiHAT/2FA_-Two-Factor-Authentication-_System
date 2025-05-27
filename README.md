@@ -1,5 +1,5 @@
 # 2FA (Two-Factor Authentication) System
-<br></br>
+<br>
 
 **-- LOGIN PAGE**
 <br></br>
