@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* Importing Google Font -- Inter  */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", sans-serif;
+        }
+
+        :root {
+            --color-text: #09090E;
+            --color-card: hsl(198, 60%, 81%);
+            --color-form: #8B5CF6;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 16px;
+            color: var(--color-text);
+            background: linear-gradient(#f9fd22, #3d5ce6);
+        }
+
+        form {
+            background: #efc8fbc0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            padding: 10px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        h1 {
+            text-align: center;
+            top: 20px;
+            text-decoration: underline;
+        }
+
+        .login-container {
+            width: 370px;
+            padding: 32px;
+            position: relative;
+            border-radius: 23px;
+            overflow: hidden;
+            background: var(--color-card);
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>╰(..:: Login ::..)╯<br></br></h1>
+    <div class="login-container">
+        <form action="/login" method="POST">
+            <label for="email">Email: <br></br></label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Password:<br></br></label>
+            <input type="password" id="password" name="password" required><br>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <ul style="margin-top: 40px;">
+        {% for category, message in messages %}
+        <li class="{{ category }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+
+</body>
+
+</html>
