@@ -1,18 +1,5 @@
 # 2FA (Two-Factor Authentication) System
-<br>
 
-**-- LOGIN PAGE**
-<br></br>
-![](https://imgur.com/6JV9JeD.png)
-<br></br>
-**VERIFICATION PAGE**
-<br></br>
-![](https://imgur.com/ZoGi6qj.png)
-<br></br>
-**RECEIVED MAIL**
-<br></br>
-![](https://imgur.com/VnEvlpo.png)
-<br></br>
 ## Description
 This project implements a Two-Factor Authentication (2FA) system using Python (Flask) for the backend and HTML/CSS for the frontend. The system provides an additional layer of security by requiring users to verify their identity using a one-time password (OTP) sent via email.
 
@@ -65,11 +52,18 @@ This project implements a Two-Factor Authentication (2FA) system using Python (F
 3. Enter the OTP on the verification page to complete the login process.
 
 ## Screenshots
-### Login Page
-![Login Page](static/screenshots/login.png)
-
-### OTP Verification Page
-![OTP Verification Page](static/screenshots/verify.png)
+**-- LOGIN PAGE**
+<br></br>
+![](https://imgur.com/6JV9JeD.png)
+<br></br>
+**VERIFICATION PAGE**
+<br></br>
+![](https://imgur.com/ZoGi6qj.png)
+<br></br>
+**RECEIVED MAIL**
+<br></br>
+![](https://imgur.com/VnEvlpo.png)
+<br></br>
 
 ## Security Considerations
 - Use HTTPS in production to secure communication.
