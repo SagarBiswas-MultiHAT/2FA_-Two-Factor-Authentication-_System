@@ -2,12 +2,15 @@
 <br></br>
 
 **-- LOGIN PAGE**
+<br></br>
 ![](https://imgur.com/6JV9JeD.png)
 <br></br>
 **VERIFICATION PAGE**
+<br></br>
 ![](https://imgur.com/ZoGi6qj.png)
 <br></br>
 **RECEIVED MAIL**
+<br></br>
 ![](https://imgur.com/VnEvlpo.png)
 <br></br>
 ## Description
